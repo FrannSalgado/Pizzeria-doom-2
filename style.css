@@ -1,0 +1,130 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    color: white;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(4, 12, 22);
+
+
+    background-image: url("https://w.wallhaven.cc/full/83/wallhaven-8396ok.jpg");
+}
+
+.datos {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+.contenedor {
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.568);
+    backdrop-filter: blur(4px);
+    height: 45rem;
+    width: 30rem;
+    gap: 5px;
+    border-radius: 20px;
+}
+
+.botonFachero {
+
+    height: 30px;
+    width: 100px;
+    background-color: rgba(214, 15, 15, 0.719);
+    border-radius: 10px;
+
+}
+
+.inputFachero {
+
+    height: 30px;
+    width: 100px;
+    background-color: rgba(202, 192, 192, 0.719);
+    border-radius: 10px;
+
+    font-size: 20px;
+    padding-left: 5px;
+    border-color: rgb(0, 0, 0);
+}
+
+.fotito {
+
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+
+.flip-container {
+    background-color: transparent;
+    width: 90%;
+    height: 50%;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+
+    perspective: 1000px;
+}
+
+.card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    transition: transform 1s;
+    transform-style: preserve-3d;
+
+}
+
+.flip-container:hover .card {
+    transform: rotateY(180deg);
+}
+
+.front,
+.back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+.data {
+    text-align: start;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+    height: 100%;
+    width: 80%;
+    padding: 10px;
+
+}
+
+
+
+.back {
+    background-image: url("https://img.freepik.com/vector-gratis/ingredientes-pizza-costuras_1176-269.jpg?w=826&t=st=1662595483~exp=1662596083~hmac=d94b82333aae6e0b3133f8a1564ce033971faa041f64894d33d29a23ba5e77d2");
+    color: white;
+    transform: rotateY(180deg);
+}

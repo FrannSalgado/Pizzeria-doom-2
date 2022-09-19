@@ -69,7 +69,7 @@ const inputCodigo = document.getElementById("codigoNumerico");
 const botonValidar = document.getElementById("validar");
 const nombrePizza = document.getElementById("nombrePizza");
 const valorPizza = document.getElementById('valorPizza');
-const ulReset = () => '<ul id="lista" class="data">Ingredientees: </ul>';
+const ulReset = () => '<ul id="lista" class="data">Ingredientes: </ul>';
 const ulPadre = document.getElementById("ulPadre")
 
 
